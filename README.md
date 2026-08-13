@@ -1,16 +1,96 @@
-# React + Vite
+# Employee Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Employee Management System where admins can create and assign tasks to employees, while employees can accept, complete, or fail assigned tasks.
 
-Currently, two official plugins are available:
+##  Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Admin Dashboard
 
-## React Compiler
+- Admin login
+- View all employees
+- Create and assign new tasks
+- View employee task statistics
+- Track:
+  - New Tasks
+  - Accepted Tasks
+  - Completed Tasks
+  - Failed Tasks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Employee Dashboard
 
-## Expanding the ESLint configuration
+- Employee login
+- View assigned tasks
+- Accept new tasks
+- Mark accepted tasks as completed
+- Mark accepted tasks as failed
+- View task statistics
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React.js
+- JavaScript
+- Tailwind CSS
+- React Context API
+- React Hooks
+- LocalStorage
+- Vite
+
+## 📂 Project Structure
+
+```text
+src
+│
+├── components
+│   ├── Auth
+|      └──Login
+│   ├── Dashboard
+|      ├──Admin Dashboard
+|      └──Emp Dashboard
+│   ├── Others
+|      ├──All Task
+|      ├──Create Task
+|      ├──Header
+|      └──TaskNumbers
+│   └── TaskList
+|      ├──AcceptTask
+|      ├──CompleteTask
+|      ├──NewTask
+|      ├──FailedTask
+|      └──Task
+│
+├── context
+│   └── AuthProvider.jsx
+│
+├── Utils
+│   └── localstorage.js
+│
+├── App.jsx
+└── main.jsx
+```
+## Login System
+
+The application supports two types of users:
+Admin->
+Admin can:
+Create tasks
+Assign tasks to employees
+View all employee task statistics
+
+Employee->
+Employees can:
+View their assigned tasks
+Accept tasks
+Complete tasks
+Fail tasks
+
+## Task Status
+
+Each task can have one of the following statuses:
+New Task – Task has been assigned but not accepted.
+Accepted Task – Employee has accepted the task.
+Completed Task – Employee has completed the task.
+Failed Task – Employee has failed the task.
+
+💾 Data Storage
+
+The application uses localStorage to store employee and admin information.
