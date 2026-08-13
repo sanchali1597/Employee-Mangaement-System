@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+body{
+    /* color:#111; */
+    background-image:url("C:\EMS\src\assets\Background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#Tasklist::-webkit-scrollbar{
+    display: none;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
