@@ -91,6 +91,6 @@ Accepted Task – Employee has accepted the task.
 Completed Task – Employee has completed the task.
 Failed Task – Employee has failed the task.
 
-💾 Data Storage
+##Data Storage
 
 The application uses localStorage to store employee and admin information.
