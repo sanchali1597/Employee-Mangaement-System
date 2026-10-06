@@ -2,6 +2,9 @@
 
 A React-based Employee Management System where admins can create and assign tasks to employees, while employees can accept, complete, or fail assigned tasks.
 
+## Live DEMO
+[View Live Project] (https://employee-mangaement-system.vercel.app/)
+
 ##  Features
 
 ### Admin Dashboard
